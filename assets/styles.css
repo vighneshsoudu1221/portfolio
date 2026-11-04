@@ -276,13 +276,13 @@ section {
 #hero {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
   gap: 60px;
   align-items: center;
   padding-top: 160px;
 }
 .hero-name {
-  font-size: clamp(54px, 9vw, 128px);
+  font-size: clamp(42px, 6vw, 84px);
   font-weight: 800;
   background: linear-gradient(
     120deg,
@@ -411,6 +411,7 @@ section {
 /* Profile Photo */
 .profile-photo-wrap {
   position: relative;
+  min-width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,8 +419,9 @@ section {
 }
 .profile-photo-container {
   position: relative;
-  width: 420px;
-  height: 520px;
+  width: min(100%, 460px);
+  height: auto;
+  aspect-ratio: 21 / 26;
   border-radius: 28px;
   background: linear-gradient(
     140deg,
@@ -449,9 +451,9 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 45% center;
   display: block;
   animation:
-    imageZoom 4s ease-in-out infinite,
     imageRotate 8s linear infinite,
     imageShadow 3s ease-in-out infinite;
 }
@@ -464,15 +466,6 @@ section {
   50% {
     box-shadow: 0 40px 100px -20px rgba(236, 72, 153, 0.6);
     transform: scale(1.02);
-  }
-}
-@keyframes imageZoom {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
   }
 }
 @keyframes imageRotate {
@@ -513,12 +506,11 @@ section {
 }
 @media (max-width: 900px) {
   #hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     padding-top: 130px;
   }
   .profile-photo-container {
-    width: 340px;
-    height: 420px;
+    width: min(100%, 380px);
   }
 }
 
@@ -743,7 +735,7 @@ section {
   border-radius: 20px;
   padding: 30px;
 }
-.edu-card h3 {
+.edu-card h2 {
   font-size: 22px;
   margin-bottom: 6px;
 }
@@ -766,9 +758,26 @@ section {
   font-family: "Syne";
   font-size: 18px;
 }
-.lang-card h3 {
+.lang-card h2 {
   font-size: 18px;
   margin-bottom: 18px;
+}
+.tech-heading {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.education-summary {
+  color: var(--muted);
+  font-size: 14.5px;
+}
+.education-details {
+  display: grid;
+  gap: 16px;
 }
 .badges {
   display: flex;
