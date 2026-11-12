@@ -18,9 +18,351 @@
       href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=DM+Sans:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="loader">
+      <div class="loader-init">SV</div>
+      <div class="loader-bar"></div>
+    </div>
+
+    <canvas id="particles"></canvas>
+    <div class="noise"></div>
+    <div class="cursor-ring"></div>
+    <div class="cursor-dot"></div>
+
+    <nav>
+      <span class="logo">SV.</span>
+      <a href="#hero" class="active">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="hero">
+      <div>
+        <div class="hero-tag">// AI · FULL-STACK · DATA SCIENCE</div>
+        <h1 class="hero-name">Soudu<br />Vignesh</h1>
+        <p class="hero-sub">
+          recent CSE graduate passionate about AI, and full-stack development. I
+          build production-grade systems that blend computer vision, backend
+          rigor, and clean UX.
+        </p>
+        <div class="ctas">
+          <a href="#projects" class="btn primary">View Projects →</a>
+          <a href="#contact" class="btn">Get in touch</a>
+          <a
+            href="https://github.com/vighneshsoudu2004-glitch"
+            target="_blank"
+            class="btn"
+            >GitHub</a
+          >
+        </div>
+      </div>
+      <div class="profile-photo-wrap">
+        <div class="profile-photo-container">
+          <img
+            src="assets/ChatGPT Image Sep 12, 2026, 07_36_05 PM.png"
+            alt="Soudu Vignesh"
+            class="profile-photo-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="eyebrow">// 02 — Toolkit</div>
+      <h2 class="title">Skills & <span>Stack</span></h2>
+      <p class="lead">
+        A blend of frontend craft, backend rigor, and AI-driven thinking.
+      </p>
+      <div class="skills-grid">
+        <div>
+          <div class="skill-row">
+            <div class="skill-head"><span>Python</span><span>90%</span></div>
+            <div class="bar"><div class="bar-fill" data-w="90"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span>JavaScript</span><span>85%</span>
+            </div>
+            <div class="bar"><div class="bar-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head"><span>React.js</span><span>82%</span></div>
+            <div class="bar"><div class="bar-fill" data-w="82"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span>Node / Express</span><span>78%</span>
+            </div>
+            <div class="bar"><div class="bar-fill" data-w="78"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span>SQL / MongoDB</span><span>80%</span>
+            </div>
+            <div class="bar"><div class="bar-fill" data-w="80"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span>ML / Computer Vision</span><span>75%</span>
+            </div>
+            <div class="bar"><div class="bar-fill" data-w="75"></div></div>
+          </div>
+        </div>
+        <div>
+          <h3
+            style="
+              font-size: 18px;
+              margin-bottom: 14px;
+              color: var(--muted);
+              font-family: &quot;DM Sans&quot;;
+              font-weight: 500;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+            "
+          >
+            Tech I work with
+          </h3>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">JavaScript</span
+            ><span class="chip">SQL</span> <span class="chip">React.js</span
+            ><span class="chip">HTML</span><span class="chip">CSS</span
+            ><span class="chip">Bootstrap</span>
+            <span class="chip">Node.js</span><span class="chip">Express.js</span
+            ><span class="chip">Flask</span> <span class="chip">MySQL</span
+            ><span class="chip">MongoDB</span> <span class="chip">Git</span
+            ><span class="chip">GitHub</span><span class="chip">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="eyebrow">// 03 — Journey</div>
+      <h2 class="title">Experience & <span>Internships</span></h2>
+      <p class="lead">
+        Hands-on training across AI, ML, and applied analytics.
+      </p>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-card">
+            <div class="tl-meta">
+              <div class="role">Data Science & ML Intern</div>
+              <div class="date">2 Weeks</div>
+            </div>
+            <div class="tl-org">Ybi Foundation · Remote</div>
+            <ul>
+              <li>
+                Completed structured internship focused on applied data science
+                and ML workflows.
+              </li>
+              <li>
+                Worked on real ML tasks: data preprocessing, model training, and
+                evaluation.
+              </li>
+              <li>
+                Earned ISO-certified recognition upon successful completion.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-card">
+            <div class="tl-meta">
+              <div class="role">
+                GenAI Powered Data Analytics — Job Simulation
+              </div>
+              <div class="date">Sep 2025</div>
+            </div>
+            <div class="tl-org">
+              Tata Consultancy Services · Forage Platform
+            </div>
+            <ul>
+              <li>
+                Practical tasks in EDA, risk profiling, and predicting
+                delinquency with AI.
+              </li>
+              <li>
+                Produced a business report with data storytelling for
+                collections strategy.
+              </li>
+              <li>
+                Implemented an AI-driven collections strategy simulation
+                end-to-end.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-card">
+            <div class="tl-meta">
+              <div class="role">Bharatiya Antariksh Hackathon 2025</div>
+              <div class="date">2025</div>
+            </div>
+            <div class="tl-org">National-level innovation challenge · H2S</div>
+            <ul>
+              <li>
+                Participated in a national-level hackathon on space and
+                technology.
+              </li>
+              <li>
+                Collaborated on AI-driven solutions for real-world space-tech
+                challenges.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="eyebrow">// 04 — Selected Work</div>
+      <h2 class="title">Featured <span>Projects</span></h2>
+      <p class="lead">
+        Production-grade systems blending computer vision, full-stack
+        engineering, and clean UX.
+      </p>
+      <div class="projects">
+        <div class="proj">
+          <span class="emoji">🚦</span>
+          <h3>Smart City Traffic Monitoring</h3>
+          <p>
+            Real-time vehicle detection & tracking on live video using YOLOv8 +
+            Deep SORT, with traffic density, speed estimation, congestion
+            classification, and an interactive analytics dashboard.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Flask</span
+            ><span class="tag">React</span> <span class="tag">MySQL</span
+            ><span class="tag">YOLOv8</span><span class="tag">Deep SORT</span
+            ><span class="tag">OpenCV</span>
+          </div>
+        </div>
+        <div class="proj">
+          <img
+            class="project-image"
+            src="assets/todo.png.png"
+            alt="Screenshot of the Professional Todo Application"
+            loading="lazy"
+          />
+          <span class="emoji">✅</span>
+          <h3>Professional Todo Application</h3>
+          <p>
+            Full-stack task management app with JWT authentication,
+            bcrypt-hashed passwords, category filtering, RESTful APIs, and a
+            fully responsive mobile-first UI.
+          </p>
+          <div class="tags">
+            <span class="tag">Node.js</span><span class="tag">Express</span
+            ><span class="tag">MySQL</span> <span class="tag">JavaScript</span
+            ><span class="tag">Bootstrap</span><span class="tag">JWT</span>
+          </div>
+          <a
+            class="project-link"
+            href="https://todo-list-zeta-six-64.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View live project <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="proj">
+          <span class="emoji">🤖</span>
+          <h3>GenAI Collections Strategy</h3>
+          <p>
+            AI-driven collections strategy simulation built during the Tata ×
+            Forage program — combining EDA, risk profiling, and delinquency
+            prediction into a business-ready report.
+          </p>
+          <div class="tags">
+            <span class="tag">GenAI</span><span class="tag">Python</span
+            ><span class="tag">EDA</span><span class="tag">Storytelling</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="eyebrow">// 05 — Background</div>
+      <h2 class="title">Education & <span>Languages</span></h2>
+      <div class="two-col">
+        <div class="edu-card">
+          <h3>B.Tech — Computer Science & Engineering</h3>
+          <div class="school">
+            Jyothishmathi Institute of Technology and Science · Karimnagar,
+            Telangana
+          </div>
+          <p style="color: var(--muted); font-size: 14.5px">
+            Final-year student focused on AI, full-stack development, and data
+            science. Active in hackathons and applied research projects.
+          </p>
+          <div class="edu-meta">
+            <span>2022 — 2026</span>
+            <span>CGPA · <strong>7.65 / 10</strong></span>
+          </div>
+        </div>
+        <div>
+          <div class="lang-card" style="margin-bottom: 16px">
+            <h3>Languages</h3>
+            <div class="badges">
+              <span class="badge">English · Professional</span>
+              <span class="badge">Telugu · Native</span>
+            </div>
+          </div>
+          <div class="lang-card">
+            <h3>Certifications</h3>
+            <div class="badges">
+              <span class="badge">Tata GenAI · Forage</span>
+              <span class="badge">Ybi Foundation · ISO</span>
+              <span class="badge">Python · CodeTantra</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="eyebrow">// 06 — Let's Talk</div>
+      <h2 class="title">Get in <span>Touch</span></h2>
+      <p class="lead">
+        Open to internships, full-time roles, and collaborative builds in AI and
+        web.
+      </p>
+      <div class="contact-grid">
+        <div class="avatar-wrap"><div class="avatar">SV</div></div>
+        <div class="info-cards">
+          <a class="info" href="mailto:vigneshsoudu2004@gmail.com"
+            ><div class="lbl">Email</div>
+            <div class="val">vigneshsoudu2004@gmail.com</div></a
+          >
+          <a class="info" href="tel:+917993782587"
+            ><div class="lbl">Phone</div>
+            <div class="val">+91 79937 82587</div></a
+          >
+          <a
+            class="info"
+            href="https://www.linkedin.com/in/vigneshsoudu/"
+            target="_blank"
+            ><div class="lbl">LinkedIn</div>
+            <div class="val">soudu-vignesh</div></a
+          >
+          <a
+            class="info"
+            href="https://github.com/vigneshsoudu2004-glitch"
+            target="_blank"
+            ><div class="lbl">GitHub</div>
+            <div class="val">@vigneshsoudu2004-glitch</div></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Soudu Vignesh · Crafted with ⚡ and lots of coffee</footer>
+
+    <script src="assets/script.js"></script>
   </body>
 </html>
